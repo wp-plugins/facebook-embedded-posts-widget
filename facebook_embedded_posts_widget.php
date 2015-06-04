@@ -153,11 +153,12 @@ class FacebookEmbeddedPostsWidget extends WP_Widget{
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
- <div class="facebook_embedded_posts <?php echo $moduleclass_sfx;?>">
+ <div class="facebook_embedded_posts <?php echo $moduleclass_sfx;?>" style="max-width: <?php echo $wideth; ?>px;">
            <div class="fb-post"
               data-href="<?php echo $fb_url;?>"
               data-width="<?php echo $width;?>">
             </div>
+			<div style="text-align: right; font-size: 9px; color: #808080; font-weight: normal; font-family: tahoma,verdana,arial,sans-serif; line-height: 1.28; direction: ltr; position:relative; top:-10px;"><a href="http://sparxstudios.com/" target="_blank" style="color: #808080;" title="Visit the website">SparxStudios</a></div>
  </div>
 <?php
         echo $after_widget;
